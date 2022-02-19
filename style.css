@@ -3,23 +3,114 @@
     padding: 0;
 }
 
+body{
+    background-color: #6A2C70;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 80px;
+}
+
+.top-container{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+.top-container>p{
+    display: flex;
+    padding-left: 20px;
+    font-size: 30px;
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+}
+
+.solar-panel{
+    display: flex;
+    background-color: #241a19;
+    width: 150px;
+    height: 50px;
 }
 
 .calculator{
-    background-color: aqua;
-    height: 400px;
-    width: 300px;
+    background-color: #393E46;
+    border: 10px solid #F08A5D;
+    border-radius: 20px;
+    height: 580px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 20px 0px , 0px 0px 20px 0px inset;
+    gap: 15px;
 }
 
+.screen{
+    height: 75px;
+    width: 80%;
+    background-color: #8bac0f;
+    font-family: 'Calculator', sans-serif;
+    font-style: normal;
+    color: #273003;
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+    padding: 8px;
+    box-shadow: 0px 0px 20px 6px #596e09 inset;
+
+}
+
+.first-row{
+    font-size: 28px;
+    font-weight: 400;
+    height: 20px;
+}
+
+.right-button-container{
+    display: flex;
+    gap: 10px;
+    padding-left: 180px;
+}
+
+#off-button{
+    font-size: 22px;
+}
+
+.buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 0px 20px 20px 20px;
+}
+
+.number-button{
+    background-color: #F08A5D;
+    text-decoration: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 32px;
+}
+
+#plus-button{
+    grid-row: span 2;
+    height: 110px;
+    font-size: 54px;
+}
+
+
 .footer{
-    background-color: blue;
+    background-color: #F08A5D;
+    border-radius: 10px;
     height: 50px;
     width: 400px;
     display: flex;
