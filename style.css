@@ -1,62 +1,131 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: #6A2C70;
+body {
+    background-color: #6a2c70;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
-    justify-content: center;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
-.top-container{
+.top-container {
     width: 85%;
     display: flex;
     flex-direction: row;
     padding-top: 20px;
     justify-content: space-between;
+    align-items: center;
 }
 
-.top-container>p{
+.right-button-container > .number-button {
+    height: 35px;
+}
+
+.top-container > p {
     display: flex;
-    padding-left: 20px;
+    padding-right: 20px;
     font-size: 30px;
-    font-family: 'Jura', sans-serif;
-    font-weight: bold;
+    font-family: "Jura", sans-serif;
+    font-weight: 900;
 }
 
-.solar-panel{
+.solar-panel {
     display: flex;
     background-color: #241a19;
     width: 150px;
     height: 50px;
+    border-radius: 5px;
+    border: 5px solid #63686e;
 }
 
-.calculator{
-    background-color: #393E46;
-    border: 10px solid #F08A5D;
+.pushable {
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+.right-button-container > button >span{
+    height: 35px;
+    font-size: 22px;
+}
+
+.front {
+    background-color: #35383b;
+    color: #d2d4d8;
+    text-decoration: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 32px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    display: block;
+    background: #975265;
+    color: white;
+    transform: translateY(-4px);
+}
+
+.front-grey {
+    background-color: #35383b;
+    color: #d2d4d8;
+    text-decoration: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    font-size: 32px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    display: block;
+    background: #35383b;
+    color: white;
+    transform: translateY(-4px);
+}
+
+.pushable:active .front{
+    transform: translateY(-2px);
+}
+
+.pushable:active .front-grey{
+    transform: translateY(-2px);
+}
+
+#plus-button > .front-grey{
+    height: 110px;
+}
+
+.calculator {
+    background-color: #d2d4d8;
+    border: 10px solid #f08a5d;
     border-radius: 20px;
     height: 580px;
     width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0px 0px 20px 0px , 0px 0px 20px 0px inset;
+    -webkit-box-shadow: -2px 10px 15px 5px #000000;
+    box-shadow: -2px 10px 15px 5px #000000;
+    border: 11px outset;
     gap: 15px;
 }
 
-.screen{
+.screen {
     height: 75px;
     width: 80%;
     background-color: #8bac0f;
-    font-family: 'Calculator', sans-serif;
+    font-family: "Calculator", sans-serif;
     font-style: normal;
     color: #273003;
     font-size: 48px;
@@ -66,54 +135,72 @@ body{
     justify-content: center;
     padding: 8px;
     box-shadow: 0px 0px 20px 6px #596e09 inset;
-
+    border-radius: 5px;
+    border: 10px solid #63686e;
 }
 
-.first-row{
+.first-row {
     font-size: 28px;
     font-weight: 400;
     height: 20px;
 }
 
-.right-button-container{
+.right-button-container {
     display: flex;
     gap: 10px;
     padding-left: 180px;
 }
 
-#off-button{
+#off-button {
     font-size: 22px;
 }
 
-.buttons-container{
+.buttons-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
     padding: 0px 20px 20px 20px;
 }
 
-.number-button{
-    background-color: #F08A5D;
+.number-button {
+    background-color: #1e2022;
+    color: #d2d4d8;
     text-decoration: none;
     border: none;
     height: 50px;
     width: 50px;
     font-size: 32px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
 }
 
-#plus-button{
+.red-button {
+    background-color: #5f3440;
+}
+
+#plus-button {
     grid-row: span 2;
     height: 110px;
     font-size: 54px;
 }
 
-
-.footer{
-    background-color: #F08A5D;
+.footer {
+    background-color: #b66745;
     border-radius: 10px;
     height: 50px;
     width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer > .front{
+    background-color: #f08a5d;
+    width: 100%;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    text-align: center;
 }
