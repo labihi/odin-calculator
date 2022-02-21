@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="main.js"></script>
+        <script src="main.js" defer></script>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <link href="http://fonts.cdnfonts.com/css/calculator" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +20,8 @@
                     <div class="solar-panel"></div>
                 </div>
                 <div class="screen">
-                    <div class="first-row">10</div>
-                    <div class="second-row">0</div>
+                    <div class="first-row" id="screen-first-row"></div>
+                    <div class="second-row" id="screen-second-row"></div>
                 </div>
                 <div class="right-button-container">
                     <button class="number-button pushable">
@@ -44,49 +44,49 @@
                     <button class="number-button pushable">
                         <span class="front-grey">M+</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" id="divide-button">
                         <span class="front-grey">÷</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" id="perc-button">
                         <span class="front-grey">%</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" data-value="7" id="seven-button">
                         <span class="front-grey">7</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" data-value="8" id="eight-button">
                         <span class="front-grey">8</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" data-value="9" id="nine-button">
                         <span class="front-grey">9</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" id="multiply-button">
                         <span class="front-grey">x</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" id="sign-button">
                         <span class="front-grey">+/-</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" data-value="4" id="four-button">
                         <span class="front-grey">4</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" data-value="5" id="five-button">
                         <span class="front-grey">5</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" data-value="6" id="six-button">
                         <span class="front-grey">6</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" id="minus-button">
                         <span class="front-grey">-</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" id="del-button">
                         <span class="front">C</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" data-value="1" id="one-button">
                         <span class="front-grey">1</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" data-value="2" id="two-button">
                         <span class="front-grey">2</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" data-value="3" id="three-button">
                         <span class="front-grey">3</span>
                     </button>
                     <button class="number-button pushable" id="plus-button">
@@ -95,13 +95,13 @@
                     <button class="number-button pushable" id="on-button">
                         <span class="front">AC</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" data-value="0" id="zero-button">
                         <span class="front-grey">0</span>
                     </button>
-                    <button class="number-button pushable" >
+                    <button class="number-button pushable" id="dot-button">
                         <span class="front-grey">.</span>
                     </button>
-                    <button class="number-button pushable">
+                    <button class="number-button pushable" id="equal-button">
                         <span class="front-grey">=</span>
                     </button>
                     
